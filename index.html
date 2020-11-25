@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo"/>
+        </div>
+        <div class="user">
+            <a href="#">John Snow</a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="plan-button">
+                <form>
+                    <select class="plans-list">
+                        <option value="plan">Select Plan</option>
+                        <option value="blueberry">Blueberry Plan</option>
+                        <option value="Strawberry">Strawberry Plan</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Mango">Mango</option>
+                    </select>
+                </form> 
+        </div>
+        <div class="plan-info">
+            <div class="location">
+                <a href=""><img src="images/location.png" alt="location"/> </a>
+                <ul class="location-list">
+                    <li class="location-one current">
+                        <a href="#"><img src="images/location-list.png" alt=""></a>
+                        <span>Store</span>
+                    </li>
+                    <li class="location-one store">
+                        <a href="#"><img src="images/location-list.png" alt=""></a>
+                        <span>Transport</span>
+                    </li>
+                    <li class="location-one store">
+                        <a href="#"><img src="images/location-list.png" alt=""></a>
+                        <span>Sell</span>
+                    </li>
+                    <li class="location-one store">
+                        <a href="#"><img src="images/location-list.png" alt=""></a>
+                        <span>Use</span>
+                    </li>
+                </ul>               
+            </div>
+            <p>Make</p>
+            <div class="detector"><img src="images/detector.png" alt=""/></div>
+            <div class="about-plan">
+                <p>Plan Info</p><br><br><br>
+                <pre>Point Used    :4.5 pts</pre>
+                <pre>Time               :6 hours</pre>
+                <pre>Temperature :50 F</pre>
+            </div>
+        </div>
+    </div>
+    <div class="plan-right-content">
+        <div class="about-product">
+            <ul class="product-details">
+                <li class="product-info">
+                    <p class="product-head">Run tagged</p>
+                    <span><i class="fa fa-spinner fa-pulse"></i> 40</span>
+                    <span></span>
+                </li>
+                <li class="product-info">
+                    <p class="product-head">Products handled</p>
+                    <span><i class="fa fa-spinner fa-pulse"></i> 2</span>
+                    <span></span>
+                </li>
+                <li class="product-info">
+                    <p class="product-head">Avg points used</p>
+                    <span>5.9</span>
+                    <span> pts</span>
+                </li>
+                <li class="product-info-alert">
+                    <p class="product-head">Avg alerts triggered</p>
+                    <span><i class="fa fa-spinner fa-pulse"></i> 2</span>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="active-partner">
+            <div class="active-partner-count">
+                <span>Active Partners (3)</span>
+                <span class="inactive">Inactive (2)</span>
+            </div>
+            <div class="buttons">
+                <div class="date">
+                    <form>
+                        <select class="plans-date">
+                            <option value="plan">Last Month</option>
+                            <option value="blueberry">Today</option>
+                            <option value="Strawberry">Yesterday</option>
+                            <option value="Apple">Week</option>
+                            <option value="Mango">Month</option>
+                        </select>
+                    </form> 
+                </div>
+                <div class="filter">
+                    <form>
+                        <select class="plans-detail">
+                            <option value="plan">Blueberries</option>
+                            <option value="blueberry">Blueberry Plan</option>
+                            <option value="Strawberry">Strawberry Plan</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Mango">Mango</option>
+                        </select>
+                    </form> 
+                </div>
+            </div>
+        </div>
+        <div class="compare-partner">
+            <span>Compare the 2 partners</span>
+            <span class="compare-button"><a href="#">Compare</a></span>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Harbor View</h5>
+                    <span><a href="">grower</a></span>
+                </div>                    
+                <div class="product-image"><img src="images/raspberry.jpg" alt=""/></div>
+                <div class="card-body">
+                        <li><p class="runs">8 <span style="font-size: 18px; color: rgb(54, 54, 54);">runs</span></p></li>
+                        <li><p class="product">2 <span style="font-size: 18px; color: rgb(54, 54, 54);">products</span></p></li>
+                        <li><span class="deactivate-button"><a href="#">raspberry</a></span><span class="activate-button"><a href="#">blueberry</a></span</li>
+                        <li><p>Analysis for Last month</p></li>
+                        <li><div class="temperature">
+                                <span>52</span><sup>F</sup>
+                                <p>Avg exist</p>
+                                <p>temperature</p>
+                            </div>
+                            <div class="temperature">
+                                <span>7.4</span>
+                                <p>Avg points used</p>
+                                <p>used</span></p>
+                            </div>
+                        </li>
+                </div>
+                <div class="card-footer">
+                    <span>
+                        <input class="card-footer-checkbox" type="checkbox" value=""> Compare
+                    </span>
+                    <span style="color:rgb(128, 173, 209)">Details</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h5>Harbor View</h5>
+                    <span><a href="">grower</a></span>
+                </div>                    
+                <div class="product-image"><img src="images/raspberry.jpg" alt=""/></div>
+                <div class="card-body">
+                        <li><p class="runs">5 <span style="font-size: 18px; color: rgb(54, 54, 54);">runs</span></p></li>
+                        <li><p class="product">1 <span style="font-size: 18px; color: rgb(54, 54, 54);">products</span></p></li>
+                        <li><span class="activate-button"><a href="#">blueberry</a></span</li>
+                        <li><p>Analysis for Last month</p></li>
+                        <li><div class="temperature"><span>49.4</span><sup>F</sup>
+                                <p>Avg exist</p>
+                                <p>temperature</p>
+                            </div>
+                            <div class="temperature"><span>8.1</span>
+                                <p>Avg points used</p>
+                                <p>used</span></p>
+                            </div>
+                        </li>
+                </div>
+                <div class="card-footer">
+                    <span><input class="card-footer-checkbox" type="checkbox" value=""> Compare</span>
+                    <span style="color:rgb(128, 173, 209)">Details</span>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="card-header">
+                    <h5>Harbor View</h5>
+                    <span><a href="">grower</a></span>
+                </div>                    
+                <div class="product-image"><img src="images/raspberry.jpg" alt=""/></div>
+                <div class="card-body">
+                        <li><p class="runs">19 <span style="font-size: 18px; color: rgb(54, 54, 54);">runs</span></p></li>
+                        <li><p class="product">2 <span style="font-size: 18px; color: rgb(54, 54, 54);">products</span></p></li>
+                        <li><span class="deactivate-button"><a href="#">raspberry</a></span><span class="activate-button"><a href="#">blueberry</a></span</li>
+                        <li><p>Analysis for Last month</p></li>
+                        <li><div class="temperature"><span>48.6</span><sup>F</sup>
+                                <p>Avg exist</p>
+                                <p>temperature</p>
+                            </div>
+                            <div class="temperature"><span>4.4</span>
+                                <p>Avg points used</p>
+                                <p>used</span></p>
+                            </div>
+                        </li>
+                </div>
+                <div class="card-footer">
+                    <span>
+                        <input class="card-footer-checkbox" type="checkbox" value=""> Compare
+                    </span>
+                    <span style="color:rgb(128, 173, 209)">Details</span>
+                </div>
+            </div>               
+        </div>
+    </div> 
+ 
+</body>
+</html>
