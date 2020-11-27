@@ -1,0 +1,531 @@
+@import "mix.scss";
+
+// header starts
+.header{
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    padding: 20px 0px;
+}
+.logo{
+    @include float;
+    margin-left: 40px;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+.user{
+    float: right;
+    margin-right: 40px;
+    color: #606060;
+    margin-top: 10px;
+    a{
+        color: #adaaaa;
+       }
+}
+
+/* side-bar starts */
+.sidebar{
+    width: 25%;
+    float: left;
+    height: 750px;
+    background-color: #40456d;
+}
+.plan-button{
+    width: 100%;
+    margin-bottom: 20px;
+}
+select{
+    width: 90%;
+    padding: 10px 30px;
+    margin:20px 0px 0px 15px;
+    background-color: #2fce8c;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 200;
+    border-radius: 2px;
+}
+
+.plan-info{    
+    background-color:#131a44;
+    padding: 10px 0;
+    width: 100%;
+    float: left;
+    height: 220px;
+    p{
+        color: #ffffff;
+        display: inline;
+        font-weight: inherit;
+        font-size: 20px;
+        padding:10px 0;
+        float: left;
+    }
+}
+
+.location img{
+    height: 60px;
+    width: 60px;
+    margin: 0px 20px;
+    float: left;
+}
+.location a::after{
+    content: ' ';
+    position: absolute;
+    width: 1px;
+    height: 73%;
+    top: -162px;
+    margin-top: 0;
+    left: 30%;
+    background-color: #adaaaa;
+}
+
+.detector img{
+    display: inline;
+    height: 60px;
+    width: 60px;
+    margin: 0px 20px;
+}
+
+.location{
+    position: relative;
+}
+
+.location-list{
+    float: left;
+    position: absolute;
+    top: 220px;
+}
+
+.location-one img{
+    height: 45px;
+    width: 45px;
+}
+.location li{
+    display: flex;
+    margin-top: 10px;
+    span{
+        margin-top: 10px;
+        color: #ffffff;;
+    }
+}
+.about-plan{
+    width: 85%;
+    background-color: #335799;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    margin-left: 50px;
+    p{
+        text-decoration: underline;
+        color: #eeb843;
+        font-size: 16px;
+        width: 100%;
+        margin-left: 30px;
+    }
+}
+
+.about-plan pre{
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.location-list li::after{
+    content: '';
+    height: 8%;
+    width: 1px;
+    position: absolute;
+    left: 45px;
+    margin-top: 40px;
+    background-color: #ffffff;
+}
+.location-list li::after:nth-child(4){
+    width: 0px;
+    height: 0px;
+}
+
+/* main-content starts */
+.plan-right-content{
+    width: 75%;
+    float: left;
+    margin-top: 20px;
+}
+
+.product-details li{
+    float: left;
+    padding: 20px 63px;
+    position: relative;
+    &.product-info::after{
+        content:' ';
+        height: 50%;
+        width: 2px;
+        position: absolute;
+        top: 25px;
+        right: 0px;
+        background-color: #d3d1d1;
+    }
+}
+.about-product{
+    @include float;
+    width: 96%;
+    background-color: #ffffff;
+    margin-left: 20px;
+    box-shadow: 1px 2px #b7b4b4;
+}
+.product-info span{
+    font-size: 22px;
+    font-weight: 600;
+}
+.product-info-alert span{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.active-partner{
+    float: left;
+    width: 96%;
+    margin-left: 20px;
+}
+.active-partner-count{
+    padding: 18px 0;
+    float: left;
+    span{
+        color: #292828;
+    }
+}
+.active-partner-count span.inactive{
+    font-size: 13px;
+    color: #6e6d6d;
+}
+.buttons{
+    display: inline-flex;
+    float: right;
+}
+.date{
+    width: 50%;
+}
+.filter{
+    width: 50%
+}
+.plans-date{
+    @include plan-detail;
+    background-color: #505fe6;
+}
+
+.plans-detail{
+    @include plan-detail;
+    background-color: #38ad86;
+}
+
+.compare-partner{
+    @include float;
+    width: 96%;
+    background-color: #ffffff;
+    margin-left: 20px;
+    @include padding;
+}
+
+.compare-partner span{
+    color: #4b4a4a;
+}
+.compare-partner a.compare-button{
+   padding: 6px 15px;
+   background-color: #ff8c00;
+   border-radius: 2px;
+   color: #ffffff;
+}
+.compare-button a{
+    color: #ffffff;
+}
+
+.card{
+    width: 30%;
+    float: left;
+    background-color: #ffffff;
+    margin: 0px 16px;
+}
+
+.card-header{
+	font-size: 1.6rem;
+	font-weight: bold;
+	background: white;
+    padding: 25px 0;
+    background-color: #00b8d4;
+    color: #ffffff;
+    font-weight: inherit;
+}
+.card-header span a{
+    font-size: 12px;
+    padding: 4px 15px;
+    background-color: #ff8c00;
+    color: #ffffff;
+    border-radius: 3px;
+}
+.product-image{    
+    width: 100%;
+}
+.product-image img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    margin-top: -20px;
+}
+.card-body{
+	padding: 10px 0;
+}
+
+.card-body li p.runs{
+    font-size: 26px;
+    color: #363636;
+    position: relative;
+}
+p.runs span{
+    font-size: 18px;
+    color: #464545;
+}
+p.product span{
+    font-size: 18px;
+    color: #464545;
+}
+.card-body li p.runs::after{
+    content:' ';
+    height: 2%;
+    width: 70%;
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    background-color: #e2e1e1;
+
+}
+.card-body li p.product{
+    font-size: 26px;
+    color: #363636;
+    position: relative;
+}
+.card-body li p.product{
+    font-size: 26px;
+    color: #363636;
+    position: relative;
+}
+.deactivate-button a{
+    padding: 2px 16px;
+    background-color: #d6d5d5;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-right: 12px;
+}
+.activate-button a{
+    padding: 2px 16px;
+    background-color:#90caf9;
+    color: #3b3b3b;
+    border-radius: 3px;  
+    position: relative;
+}
+.temperature{
+    width: 50%;
+    float: left;    
+    border-right: 1px solid #b3b3b3;
+    line-height: 1.2rem;    
+}
+
+.temperature span{
+    font-size: 20px;
+    color: #333333;
+}
+.card-body li{
+	margin: 10px 0;
+	font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+
+.card-footer{
+    /* padding: 40px 0px; */
+    border-top: 1px solid #747373;
+    margin-top: 60px;
+    padding: 15px 0;
+}
+.card-footer span.footer-detail{
+    color:#85adc4;
+}
+
+.card-footer span{
+    padding: 7px 25px;
+    margin-right: 13px;
+    border-right: 1px solid#747373;
+}
+.card-footer span:nth-child(2){
+    border-right: none
+}
+
+  /* cards section ends */
+.cards{
+    @include float;
+    width: 96%;
+    margin-left: 20px;
+    @include padding;
+}
+
+// media query starts
+  @media screen and (max-width: 1024px){
+    .sidebar{
+        width: 30%;
+    }
+    .about-plan{
+        width: 78%;
+    }
+    .location img{
+        height: 52px;
+        width: 52px;
+    }
+    .detector img{
+        height: 51px;
+        width: 51px;
+    }
+    .plan-info p{
+        font-size: 17px;
+    }
+    .plan-right-content{
+        width: 70%;
+    }
+    .product-details li{
+        padding: 12px 28px;
+    }
+    .card{
+        margin: 0px 10px;
+    }    
+    .card-footer{
+        margin-top: 71px;
+        span{
+            padding: 6px 11px;
+        }
+        &.footer-detail{
+            color:#85adc4;
+        }
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .product-details li{
+        padding: 12px 13px;
+    }
+    .product-info span{
+        font-size: 18px;
+    }
+    p.product-head{
+        font-size: 14px;
+    }
+    .plans-date{
+        padding: 6px 0px;
+    }
+    .card{
+        width: 46%;
+        margin-top: 10px;
+    }
+    .sidebar{
+        height: 1234px;
+    }
+  }
+
+  @media screen and (max-width: 425px){
+    .logo img{
+        width: 90px;
+        height: 30px;
+        margin-top: 6px;
+      }
+      .user a{
+          font-size: 13px;
+      }
+    select{
+        padding: 2px 3px;
+        margin: 12px 0px 0px 6px;
+    }
+    .location img{
+        height: 59px;
+        width: 59px;
+    }
+    .plan-info p{
+        font-size: 12px;
+    }
+    .detector img{
+        height: 59px;
+        width: 59px;
+    }
+    .about-plan{
+        display: none;
+    }
+    .plan-info p{
+        font-size: 19px;
+        margin-left: 26px
+    }
+    .location-one a img{
+        height: 36px;
+        width: 36px;
+    }
+    .location-list li::after{
+        left: 36px;
+        margin-top: 27px;
+    }
+    .location li span{
+        font-size: 12px;
+    }
+    .product-details li{
+        padding: 13px 16px;
+    }
+    .plans-detail{
+        margin: 10px 0px 0px 6px;
+    }
+    .plans-date{
+        margin: 10px 10px 0px 0px;
+    }
+    .compare-partner{
+        margin: 18px;
+    }
+    .compare-partner span {
+        font-size: 14px;
+    }
+    .compare-partner a.compare-button {
+        padding: 4px 11px;
+    }
+    .card {
+        width: 93%;
+        margin-top: 10px;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .plan-right-content{
+        width: 100%;
+    }
+    .plan-info{
+        height: 89px;
+    }
+    .plan-button {
+        text-align: center;
+    }
+    .location{
+        display: none;
+    }
+    .sidebar {
+        height: 142px !important;
+    }
+    select {
+        padding: 6px 16px;
+    }
+    .about-product{
+        width: 100%;
+        margin-left: 0px
+    }
+    .buttons{
+        float: none;
+    }
+    .buttons{
+        width: 100%;
+
+    }
+  }
+

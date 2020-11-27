@@ -1,0 +1,29 @@
+*{  
+    box-sizing: border-box;     
+    font-family: roboto;
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    text-decoration: none; 
+}
+body{
+    background-color: #ecf0f1;
+}
+@mixin float{
+    float: left;
+    text-align: center;
+    clear: both;
+}
+@mixin plan-detail{
+    width: 90%;
+    padding: 6px 30px;
+    margin:10px 10px 0px 15px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 200;
+}
+@mixin padding {
+    padding: 12px 0;
+}
