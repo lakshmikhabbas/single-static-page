@@ -4,7 +4,7 @@
 .header{
     width: 100%;
     height: 80px;
-    background: #ffffff;
+    background: $white;
     padding: 20px 0px;
 }
 .logo{
@@ -18,10 +18,10 @@
 .user{
     float: right;
     margin-right: 40px;
-    color: #606060;
+    color: $grey;
     margin-top: 10px;
     a{
-        color: #adaaaa;
+        color: $light-grey;
        }
 }
 
@@ -43,7 +43,7 @@ select{
     background-color: #2fce8c;
     outline: none;
     border: none;
-    color: #ffffff;
+    color: $white;
     font-size: 17px;
     font-weight: 200;
     border-radius: 2px;
@@ -56,7 +56,7 @@ select{
     float: left;
     height: 220px;
     p{
-        color: #ffffff;
+        color: $white;
         display: inline;
         font-weight: inherit;
         font-size: 20px;
@@ -79,7 +79,7 @@ select{
     top: -162px;
     margin-top: 0;
     left: 30%;
-    background-color: #adaaaa;
+    background-color: $light-grey;
 }
 
 .detector img{
@@ -108,7 +108,7 @@ select{
     margin-top: 10px;
     span{
         margin-top: 10px;
-        color: #ffffff;;
+        color: $white;;
     }
 }
 .about-plan{
@@ -128,7 +128,7 @@ select{
 
 .about-plan pre{
     font-size: 12px;
-    color: #ffffff;
+    color: $white;
     margin-left: 30px;
 }
 
@@ -139,7 +139,7 @@ select{
     position: absolute;
     left: 45px;
     margin-top: 40px;
-    background-color: #ffffff;
+    background-color: $white;
 }
 .location-list li::after:nth-child(4){
     width: 0px;
@@ -170,7 +170,7 @@ select{
 .about-product{
     @include float;
     width: 96%;
-    background-color: #ffffff;
+    background-color: $white;
     margin-left: 20px;
     box-shadow: 1px 2px #b7b4b4;
 }
@@ -222,7 +222,7 @@ select{
 .compare-partner{
     @include float;
     width: 96%;
-    background-color: #ffffff;
+    background-color: $white;
     margin-left: 20px;
     @include padding;
 }
@@ -232,18 +232,18 @@ select{
 }
 .compare-partner a.compare-button{
    padding: 6px 15px;
-   background-color: #ff8c00;
+   background-color: $orange;
    border-radius: 2px;
-   color: #ffffff;
+   color: $white;
 }
 .compare-button a{
-    color: #ffffff;
+    color: $white;
 }
 
 .card{
     width: 30%;
     float: left;
-    background-color: #ffffff;
+    background-color: $white;
     margin: 0px 16px;
 }
 
@@ -253,14 +253,14 @@ select{
 	background: white;
     padding: 25px 0;
     background-color: #00b8d4;
-    color: #ffffff;
+    color: $white;
     font-weight: inherit;
 }
 .card-header span a{
     font-size: 12px;
     padding: 4px 15px;
-    background-color: #ff8c00;
-    color: #ffffff;
+    background-color: $orange;
+    color: $white;
     border-radius: 3px;
 }
 .product-image{    
@@ -270,7 +270,7 @@ select{
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    border: 4px solid #ffffff;
+    border: 4px solid $white;
     margin-top: -20px;
 }
 .card-body{
@@ -279,16 +279,16 @@ select{
 
 .card-body li p.runs{
     font-size: 26px;
-    color: #363636;
+    color: $dark-grey;
     position: relative;
 }
 p.runs span{
     font-size: 18px;
-    color: #464545;
+    color: $charcoal;
 }
 p.product span{
     font-size: 18px;
-    color: #464545;
+    color: $charcoal;
 }
 .card-body li p.runs::after{
     content:' ';
@@ -302,18 +302,18 @@ p.product span{
 }
 .card-body li p.product{
     font-size: 26px;
-    color: #363636;
+    color: $dark-grey;
     position: relative;
 }
 .card-body li p.product{
     font-size: 26px;
-    color: #363636;
+    color: $dark-grey;
     position: relative;
 }
 .deactivate-button a{
     padding: 2px 16px;
     background-color: #d6d5d5;
-    color: #ffffff;
+    color: $white;
     border-radius: 3px;
     margin-right: 12px;
 }
@@ -340,23 +340,23 @@ p.product span{
 	font-weight: 400;
     font-size: 15px;
     line-height: 1.6;
-    color: #606060;
+    color: $grey;
 }
 
 .card-footer{
     /* padding: 40px 0px; */
-    border-top: 1px solid #747373;
+    border-top: 1px solid $light-charcoal;
     margin-top: 60px;
     padding: 15px 0;
 }
 .card-footer span.footer-detail{
-    color:#85adc4;
+    color: $light-blue;
 }
 
 .card-footer span{
     padding: 7px 25px;
     margin-right: 13px;
-    border-right: 1px solid#747373;
+    border-right: 1px solid $light-charcoal;
 }
 .card-footer span:nth-child(2){
     border-right: none
@@ -404,7 +404,7 @@ p.product span{
             padding: 6px 11px;
         }
         &.footer-detail{
-            color:#85adc4;
+            color: $light-blue;
         }
     }
   }
