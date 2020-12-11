@@ -1,0 +1,27 @@
+{
+  "name": "my-project",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.9.2"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.3.2",
+    "grunt-processhtml": "^0.4.2"
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakshmikhabbas/product-shopping-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lakshmikhabbas/product-shopping-page/issues"
+  },
+  "homepage": "https://github.com/lakshmikhabbas/product-shopping-page#readme",
+  "description": ""
+}
